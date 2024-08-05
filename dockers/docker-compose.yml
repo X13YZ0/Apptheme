@@ -1,0 +1,11 @@
+version: '3'
+services:
+  apptheme_nginx:
+    container_name: apptheme_nginx
+    image: nginx
+    ports:
+        - "80:80" 
+    volumes:
+      - ../public/:/usr/share/nginx/html/
+      - ./etc/nginx/conf.d:/etc/nginx/conf.d
+    tty: true
