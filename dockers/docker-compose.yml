@@ -6,6 +6,6 @@ services:
     ports:
         - "80:80" 
     volumes:
-      - ../public/:/usr/share/nginx/html/
+      - ../:/usr/share/nginx/html/
       - ./etc/nginx/conf.d:/etc/nginx/conf.d
     tty: true
