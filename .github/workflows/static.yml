@@ -24,7 +24,7 @@ concurrency:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    if: github.repository_owner == 'myridia'
+    #if: github.repository_owner == 'myridia'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: get_repository
+      #- name: get_repository
       #  run: |
       #    sudo apt-get install git -y
       #    git clone https://github.com/veto8/Apptheme.git
