@@ -4,8 +4,8 @@ services:
     container_name: apptheme_nginx
     image: nginx
     ports:
-        - "80:80" 
+        - "81:80" 
     volumes:
-      - ../:/usr/share/nginx/html/
+      - ../theme/:/usr/share/nginx/html/
       - ./etc/nginx/conf.d:/etc/nginx/conf.d
     tty: true
